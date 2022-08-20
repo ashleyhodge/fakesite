@@ -4,6 +4,7 @@
 import { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player'
 import videos from '/videos.json'
+import { GrPrevious } from 'react-icons';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -31,61 +32,44 @@ function Video() {
     return str.replace( /(<([^>]+)>)/ig, '');
 }
 
-  
+
   return (
     <div>
-      <Carousel>
+      <Carousel nextIcon={ <span></span>} prevIcon={ <span></span>}>
         {videos.videos?.map((video) => {
           return (
-            <Carousel.Item key={video.id} className="grid grid-cols-2">
-              <Carousel.Caption>
-                <h2 className="text-[36px] ml-[70px] text-blackish">
-                  {video.title}
-                </h2>
-                <p className="text-[22px] ml-[70px] mt-[22px] text-blueish line-clamp-5">
-                  {removeTags(video.description)}
-                </p>
-              </Carousel.Caption>
-              {hasWindow && <ReactPlayer
-              url={video.url}
-              controls={false}
-              vimeoconfig={{ iframeParams: { fullscreen: 0 } }}
-              />}
+            <Carousel.Item key={video.id} 
+            interval={1000000000}
+            >
+              <div className="grid grid-cols-2 gap-4  mb-[40px]">
+                  <div className='mt-[40px] mb-[200px]'>
+                    <h2 className="text-[36px] ml-[70px] text-blackish">
+                      {video.title}
+                    </h2>
+                    <p className="text-[22px] ml-[70px] mt-[22px] text-blueish line-clamp-5 ">
+                      {removeTags(video.description)}
+                    </p>
+                  </div>
+                <div className='flexbox justify-center items-center'>
+                  <img src='/images/playbtn.png' className='absolute right-0 mt-[120px] mx-[300px] z-20 hover:w-[130px] hover:h-[130px]' />
+                  <div className='absolute right-0 mt-[39px] transition-opacity py-[180px] px-[322px] z-10 bg-gradient-to-b from-redish to-[#FFB1B5] opacity-80 rounded-lg hover:opacity-0 hover:duration-300 duration-[8000ms] mr-[27px] border-[2px] border-redish shadow-lg shadow-white'/>
+                <div className='absolute right-0 mr-[30px] mt-[40px]'>
+                  {hasWindow && <ReactPlayer
+                    url={video.url}
+                    controls={false}
+                    vimeoconfig={{ iframeParams: { fullscreen: 0 } }}
+
+                  />}
+                </div>
+                </div>
+                
+                
+              </div>
             </Carousel.Item>
           )
         })}
       </Carousel>
     </div>
-    // <div>
-    //   <Carousel>
-    // {videos.videos?.map((video, id) => {
-    //   return (
-    //     <Carousel.Item key={id} className="grid grid-cols-2 mt-[40px]">
-    //       <Carousel.Caption>
-            
- 
-    //       </Carousel.Caption>
-    //       <div className='mr-[70px] absolute right-0 rounded-xl cursor-pointer'>
-    //         <div className='flex justify-center'>
-    //           <img src='/images/playbtn.png' className='absolute pt-[100px] z-20 hover:w-[130px] hover:h-[230px]' 
-    //           />
-    //           {/* Video Overlay */}
-    //           <div className='absolute transition-opacity py-[180px] px-[320px] z-10 bg-gradient-to-b from-redish to-[#FFB1B5] opacity-80 rounded-lg hover:opacity-0 hover:duration-300 duration-[8000ms]'/>
-    //         </div>
-    //         <div className='overflow-hidden rounded-lg z-0'>
-    //         {hasWindow && <ReactPlayer 
-              // url={video.url}
-              // controls={false}
-              // vimeoconfig={{ iframeParams: { fullscreen: 0 } }}
-              
-    //         />}
-    //         </div>
-    //       </div>
-    //     </Carousel.Item>)}
-    //   )
-    // }
-    // </Carousel>
-    // </div>
   )
 }
 
