@@ -1,14 +1,11 @@
 import Nav from "./Nav";
-import Footer from "./Footer";
 
-// combine Nav and Footer in Layout component
+// combine Nav in main Layout component
 function Layout(props) {
   return (
     <div>
       <Nav />
-      <Footer />
       <main>{props.children}</main>
-      
     </div>
   );
 }

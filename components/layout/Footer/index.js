@@ -3,7 +3,7 @@
 
 function Footer () {
   return (
-    <footer className="fixed bottom-0 left-0 border-t w-screen border-blueish flex items-center justify-between pb-16 px-10 pt-5">
+    <footer className="border-t w-screen border-blueish flex items-center justify-between pb-16 px-10 pt-5">
       <img className="w-16" src="/images/logo.png" alt="logo"/>
       <ul className="flex items-center justify-center text-2xl text-blueish">
         <li className="px-7">

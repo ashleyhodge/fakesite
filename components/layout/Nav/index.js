@@ -21,7 +21,6 @@ function Nav () {
         alt="avatar"/>
         </li>
       </ul>
-      
     </nav>
   )
 }
