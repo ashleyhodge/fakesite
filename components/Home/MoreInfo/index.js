@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 function MoreInfo() {
   return (
-    <div >
+    <div className="mb-[80px]" >
       <h2 className="flex justify-center items-center text-blackish text-[36px]">
         Ready to have you cake and eat it too?
       </h2>

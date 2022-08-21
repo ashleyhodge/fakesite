@@ -1,9 +1,9 @@
 function Directory() {
   return (
-    <div className="grid grid-cols-4 border-black border-2">
-      <div className="border-2">
-        <h2 className="text-[22px] text-redish ">Fakesite</h2>
-        <ul>
+    <div className="grid grid-cols-4 mx-[40px] my-[40px]">
+      <div className="space-y-3">
+        <h2 className="text-[22px] text-redish mx-[30px]">Fakesite</h2>
+        <ul className="text-blueish text-[22px]">
           <li>
             About us
           </li>
@@ -18,9 +18,9 @@ function Directory() {
           </li>
         </ul>
       </div>
-      <div className="border-2">
-        <h2 className="text-[22px] text-redish ">Account</h2>
-        <ul>
+      <div className="space-y-3">
+        <h2 className="text-[22px] text-redish mx-[30px] ">Account</h2>
+        <ul className="text-blueish text-[22px]">
           <li>
             Edit Profile
           </li>

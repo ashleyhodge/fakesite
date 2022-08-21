@@ -1,0 +1,57 @@
+/* Styling for Navbar */
+
+.nav{
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0 0px 70px;
+}
+.nav_logo {
+  width: 64px;
+}
+.nav div {
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-between;
+  font-size: 22px;
+  line-height: 28px;
+  color: white;
+}
+.nav ul {
+  display: flex;
+
+}
+.nav li {
+  padding: 0 28px 0 28px;
+}
+.nav_icon {
+  display: flex;
+  border-radius: 100%;
+  border: 2px solid white;
+  width: 64px;
+  margin-right: 70px;
+}
+
+
+@media screen {
+  @media (max-width:575px) {
+    .nav ul {
+      display: block;
+      position: absolute;
+      top: 100px;
+      align-items: center;
+      background-color: #ee2d1c;
+      transition: all 0.5s ease;
+      opacity: .90;
+      border-radius: 0 8px 8px 0;
+    }
+    .nav_logo {
+      display: none
+    }
+    .nav_icon {
+      width: 50px
+    }
+  }
+}

@@ -1,26 +1,42 @@
 /* eslint-disable @next/next/no-img-element */
+import { useState } from 'react';
 import Link from "next/link";
-
+import classes from './Nav.module.css'
 
 function Nav () {
-  
+  const [showNav, setShowNav] = useState(false);
+
+
   return (
-    <nav className="absolute top-0 left-0 border-t w-screen border-blueish flex items-center justify-between pt-22 px-10">
+    <nav className={classes.nav}>
       <Link href='/'>
-        <img className="w-16" src="/images/logo.png" alt="logo"/>
+        <img className={classes.nav_logo} src="/images/logo.png" alt="logo"/>
       </Link>
-      <ul className="flex items-center justify-center text-2xl text-white">
-        <li className="px-7">
-          Account
-        </li>
-        <li className="px-7">
-          Help
-        </li>
-        <li className="pl-7 ">
-        <img src="/images/profile.jpg" className="rounded-full w-16 border-2 border-white"
-        alt="avatar"/>
-        </li>
+      <div>
+        {/* show slide out nav */}
+        <ul className={
+        (showNav ? "left-0" : "-left-full")}>
+        <Link href='/a'>
+          <li>
+            Account
+          </li>
+        </Link>
+        <Link href='/h'>
+          <li>
+            Help
+          </li>
+        </Link>
       </ul>
+      {showNav ? (
+          <img src="/images/profile.jpg" className={classes.nav_icon}
+          alt="avatar" onClick={() => setShowNav(!showNav)}/>
+        ) : (
+          <img src="/images/profile.jpg" className={classes.nav_icon}
+          alt="avatar" onClick={() => setShowNav(!showNav)}/>
+        )}
+      </div>
+      
+        
     </nav>
   )
 }

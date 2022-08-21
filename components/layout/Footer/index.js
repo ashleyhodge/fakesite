@@ -3,9 +3,9 @@
 
 function Footer () {
   return (
-    <footer className="border-t w-screen border-blueish flex items-center justify-between pb-16 px-10 pt-5">
-      <img className="w-16" src="/images/logo.png" alt="logo"/>
-      <ul className="flex items-center justify-center text-2xl text-blueish">
+    <footer className="border-t border-blueish flex items-center justify-between pb-16 pt-5">
+      <img className="w-16 mx-[70px]" src="/images/logo.png" alt="logo"/>
+      <ul className="flex items-center justify-center text-2xl text-blueish mx-[70px]">
         <li className="px-7">
           Terms
         </li>
