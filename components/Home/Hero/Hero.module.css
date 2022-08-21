@@ -1,0 +1,77 @@
+/* Styling for Hero section */
+@font-face {
+    font-family: SourceSansPro-Regular ;
+    src: url(/fonts/SourceSansPro-Regular.otf);
+  }
+
+.section {
+  background: url(/images/hero-image.png);
+  background-size: 1800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 128px 0 150px;
+  overflow: hidden;
+}
+.section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-bottom: 22px;
+}
+.section h1 {
+  margin: 0 100px;
+  font-size: 48px;
+  font-family: SourceSansPro-Regular;
+  line-height: 48px;
+}
+.section p {
+  margin: 22px 370px 22px;
+  font-size: 22px;
+  font-family: SourceSansPro-Regular;
+  line-height: 28px;
+}
+.button_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section button {
+  min-height: 55px;
+  font-family: SourceSansPro-Regular;
+  font-size: 22px;
+  border-radius: 100px;
+  background-color: #ee2d1c;
+  padding: 0 25px 0 25px;
+}
+
+@media screen {
+  @media (max-width:980px) {
+    .section p {
+      margin: 22px 210px;
+      background-attachment: fixed;
+    }
+  }
+  @media (max-width:768px) {
+    .section h1 {
+      font-size: 40px;
+      margin: 0 50px;
+    }
+    .section p {
+      margin: 22px 100px ;
+    }
+  }
+  @media (max-width: 660px) {
+    .section {
+      width:150%;
+    }
+  }
+  @media (max-width: 415px) {
+.section {
+  
+  width: 220%;
+}
+  }
+} 
+

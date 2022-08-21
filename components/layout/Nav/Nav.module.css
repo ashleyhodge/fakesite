@@ -1,4 +1,8 @@
 /* Styling for Navbar */
+@font-face {
+  font-family: SourceSansPro-Regular ;
+  src: url(/fonts/SourceSansPro-Regular.otf);
+}
 
 .nav{
   position: absolute;
@@ -16,6 +20,7 @@
   align-items:flex-end;
   justify-content: space-between;
   font-size: 22px;
+  font-family: SourceSansPro-Regular;
   line-height: 28px;
   color: white;
 }
@@ -36,7 +41,18 @@
 
 
 @media screen {
-  @media (max-width:575px) {
+  @media (max-width: 768px) {
+    .nav div {
+      font-size: 17px
+    }
+    .nav_icon {
+      width: 50px
+    }
+    .nav_logo {
+      width: 50px;
+    }
+  }
+  @media (max-width:660px) {
     .nav ul {
       display: block;
       position: absolute;
@@ -46,12 +62,24 @@
       transition: all 0.5s ease;
       opacity: .90;
       border-radius: 0 8px 8px 0;
+      font-size: 22px
     }
     .nav_logo {
       display: none
     }
     .nav_icon {
-      width: 50px
+      width: 60px
+    }
+  }
+  @media (max-width: 415px) {
+    .nav_icon {
+      width: 80px;
+    }
+    .nav ul {
+      top: 120px;
+      font-size: 30px;
+      padding: 10px;
+      line-height: 40px;
     }
   }
 }
