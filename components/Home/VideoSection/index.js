@@ -6,6 +6,7 @@ import ReactPlayer from 'react-player'
 import videos from '/videos.json'
 import { GrPrevious } from 'react-icons';
 import { Carousel } from 'react-bootstrap';
+import Link from 'next/link';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -55,10 +56,12 @@ function Video() {
                 
                 <div className="grid grid-cols-2 gap-4  mb-[40px]">
                 {/* Title and description section */}
-                  <div className='mt-[40px] mb-[200px]'>
-                    <h2 className="text-[36px] ml-[70px] text-blackish">
-                      {video.title}
-                    </h2>
+                  <div className='mt-[40px] mb-[200px] '>
+                    <Link href={video.url}>
+                      <h2 className="text-[36px] ml-[70px] text-blackish ">
+                        {video.title}
+                      </h2>
+                    </Link>
                     <p className="text-[22px] ml-[70px] mt-[22px] text-blueish line-clamp-5 ">
                       {removeTags(video.description)}
                     </p>

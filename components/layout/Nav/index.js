@@ -5,7 +5,7 @@ import Link from "next/link";
 function Nav () {
   
   return (
-    <nav className="fixed top-0 left-0 border-t w-screen border-blueish flex items-center justify-between pt-22 px-10">
+    <nav className="absolute top-0 left-0 border-t w-screen border-blueish flex items-center justify-between pt-22 px-10">
       <Link href='/'>
         <img className="w-16" src="/images/logo.png" alt="logo"/>
       </Link>
