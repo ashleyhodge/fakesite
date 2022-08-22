@@ -11,7 +11,7 @@ function Hero() {
 				<p>Create the world's greatest fake site and enjoy the breeze of fresh air when you complete it</p>
 			</div>
 			<div className={classes.button_div}>
-					<Link href="/Videolist">
+					<Link href="https://vimeo.com/channels/staffpicks">
 						<button type="button">Do something awesome</button>
 					</Link>
 			</div>
