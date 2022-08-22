@@ -1,6 +1,6 @@
 function Directory() {
   return (
-    <div className="grid grid-cols-4 mx-[40px] my-[40px]">
+    <div className="grid grid-cols-4 mx-[40px] my-[40px] wrapper">
       <div className="space-y-3">
         <h2 className="text-[22px] text-redish mx-[30px]">Fakesite</h2>
         <ul className="text-blueish text-[22px]">

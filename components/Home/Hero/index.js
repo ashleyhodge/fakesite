@@ -3,7 +3,7 @@ import classes from './Hero.module.css'
 
 function Hero() {
   return (
-		<div className='wrapper'>
+		
 		<section className={classes.section}>
 			<div>
 				<h1>The world's greatest fake site</h1>
@@ -13,7 +13,6 @@ function Hero() {
 					<button type="button">Do something awesome</button>
 			</div>
 		</section>
-		</div>
   )
 }
 

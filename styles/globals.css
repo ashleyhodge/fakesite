@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width:660px) {
+  .wrapper {
+    width: 143%;
+  }
+}
+@media (max-width:425px) {
+  .wrapper {
+    width: 190%;
+  }
+}
+@media (max-width:375px) {
+  .wrapper {
+    width: 188%;
+  }
+}

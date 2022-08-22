@@ -67,11 +67,10 @@
       width:150%;
     }
   }
-  @media (max-width: 415px) {
-.section {
-  
-  width: 220%;
-}
+  @media (max-width: 425px) {
+    .section {
+      width: 200%;
+    }
   }
 } 
 
