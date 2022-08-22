@@ -30,6 +30,11 @@
   margin-left: 70px;
   color: #4c4c51;
 }
+.col1 h2:hover {
+  color: #88939e;
+  cursor: pointer;
+}
+
 .col1 p {
   font-family: SourceSansPro-Regular;
   font-size: 22px;

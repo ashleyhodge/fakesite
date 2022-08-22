@@ -16,12 +16,12 @@ function Nav () {
         {/* show slide out nav */}
         <ul className={
         (showNav ? "left-0" : "-left-full")}>
-        <Link href='/a'>
+        <Link href='/#'>
           <li>
             Account
           </li>
         </Link>
-        <Link href='/h'>
+        <Link href='/#'>
           <li>
             Help
           </li>

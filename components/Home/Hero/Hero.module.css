@@ -45,12 +45,22 @@
   background-color: #ee2d1c;
   padding: 0 25px 0 25px;
 }
+.section button:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ee2d1c;
+}
+.section button:focus {
+  color: #ee2d1c;
+  border: 2px solid #ee2d1c;
+}
 
 @media screen {
   @media (max-width:980px) {
     .section p {
       margin: 22px 210px;
       background-attachment: fixed;
+      
     }
   }
   @media (max-width:768px) {

@@ -7,7 +7,7 @@ function MoreInfo() {
     <div className='wrapper'>
       <section className={classes.section} >
         <h2>
-          Ready to have you cake and eat it too?
+          Ready to have your cake and eat it too?
         </h2>
         <p>
           Start by designing the experience you have in mind. We'll guide you through each step. If you experience meets the quality standards, you'll hear more about what's next.

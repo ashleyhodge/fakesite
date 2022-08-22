@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import classes from './Hero.module.css'
+import Link from 'next/link';
 
 function Hero() {
   return (
@@ -10,7 +11,9 @@ function Hero() {
 				<p>Create the world's greatest fake site and enjoy the breeze of fresh air when you complete it</p>
 			</div>
 			<div className={classes.button_div}>
-					<button type="button">Do something awesome</button>
+					<Link href="/Videolist">
+						<button type="button">Do something awesome</button>
+					</Link>
 			</div>
 		</section>
   )
