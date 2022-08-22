@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-
+// * Tailwind CSS *
 
 function Footer () {
   return (
-    <footer className="border-t border-blueish flex items-center justify-between pb-16 pt-5">
-      <img className="w-16 mx-[70px]" src="/images/logo.png" alt="logo"/>
-      <ul className="flex items-center justify-center text-2xl text-blueish mx-[70px]">
+    <footer className="wrapper ">
+      <div className="flex items-center justify-between border-t-[1px] pb-16 pt-5 mx-[70px] border-[#e8e8e8]">
+        <img className="w-16" src="/images/logo.png" alt="logo"/>
+      <ul className="flex items-center justify-center text-2xl text-blueish">
         <li className="px-7">
           Terms
         </li>
@@ -16,6 +17,7 @@ function Footer () {
           Site Map
         </li>
       </ul>
+      </div>
       
     </footer>
   )

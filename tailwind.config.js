@@ -6,8 +6,8 @@ module.exports = {
     'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    fontSize: {
-      '2xl': '22px'
+    screens: {
+      "660" : '660px'
     },
     extend: {
       colors: {
@@ -15,13 +15,9 @@ module.exports = {
         'blackish': '#4C4C51',
         'blueish': '#88939E'
       },
-      spacing: {
-        '22': '22px'
-      }
     },
   },
   plugins: [
     require('@tailwindcss/line-clamp'),
-    require('flowbite/plugin')
   ],
 }

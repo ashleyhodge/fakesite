@@ -1,3 +1,4 @@
+// Showing off my tailwind css skills
 function Directory() {
   return (
     <div className="grid grid-cols-4 mx-[40px] my-[40px] wrapper">

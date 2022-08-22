@@ -1,0 +1,25 @@
+@font-face {
+  font-family: SourceSansPro-Regular ;
+  src: url(/fonts/SourceSansPro-Regular.otf);
+}
+
+.section {
+  margin-bottom: 80px;
+}
+.section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4c4c51;
+  font-size: 36px;
+  font-family: SourceSansPro-Regular;
+  margin: 0 10%;
+  text-align: center;
+}
+.section p {
+  text-align: center;
+  color: #88939e;
+  font-size: 22px;
+  font-family: SourceSansPro-Regular;
+  margin: 22px 18%;
+}
