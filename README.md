@@ -17,6 +17,9 @@ For this project I used:
 - CSS
 
 ## Challenges
+Using Vimeo API: 
+- I spent most of my time working with this API trying to understand the documentation and the implementation using NextJS, but unfortunately I was not able to get it working before the deadline. I will continue working on this until I fully understand and am able to use this API in my application.
+  
 Carousel Component:
 - Styling this component was difficult due to the use of a new technology - React-Player. Although the instructions stated not to worry about using a video player during this application, I decided that using on would give me the chance to show my ability to learn something new in a limited time frame. It was a difficult challenge to overcome but in the end I made it work.
 
