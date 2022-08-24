@@ -123,7 +123,7 @@
     }
     .vid_bg div {
       margin: 38px 138px 0 0;
-      padding: 142px 252px ;
+
     }
     .vid_player {
       margin-right: 140px;
@@ -135,7 +135,6 @@
     }
     .vid_bg div {
       margin: 38px 118px 0 0;
-      padding: 142px 252px ;
     }
     .vid_player {
       margin-right: 120px;
@@ -146,11 +145,10 @@
       margin-left: 30px;
     }
     .vid_bg img {
-      margin: 120px 390px 300px 0;
+      margin: 120px 390px 300px;
     }
     .vid_bg div {
-      margin: 38px 198px 0 0;
-      padding: 142px 252px ;
+      margin: 38px 198px;
     }
     .vid_player {
       margin-right: 200px;
@@ -158,11 +156,10 @@
   }
   @media (max-width:575px) {
     .vid_bg img {
-      margin: 120px 310px 300px 0;
+      margin: 120px 310px 300px;
     }
     .vid_bg div {
-      margin: 38px 118px 0 0;
-      padding: 142px 252px ;
+      margin: 38px 118px;
     }
     .vid_player {
       margin-right: 120px;
@@ -170,23 +167,31 @@
   }
   @media (max-width:480px) {
     .vid_bg img {
-      margin: 120px 260px 300px 0;
+      margin: 120px 260px 300px;
     }
     .vid_bg div {
-      margin: 38px 68px 0 0;
-      padding: 142px 252px ;
+      margin: 38px 68px;
+      
     }
     .vid_player {
       margin-right: 70px;
     }
   }
-  @media (max-width:480px) {
+  @media (max-width:450px) {
     .vid_bg img {
-      margin: 120px 260px 300px 0;
+      margin: 120px 260px 300px;
     }
     .vid_bg div {
-      margin: 38px 68px 0 0;
-      padding: 142px 252px ;
+      margin: 38px 88px;
+    }
+    .vid_player {
+      margin-right: 90px;
+    }
+  }
+
+  @media (max-width:375px) {
+    .vid_bg div {
+      margin: 38px 68px;
     }
     .vid_player {
       margin-right: 70px;
