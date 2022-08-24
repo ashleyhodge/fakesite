@@ -54,7 +54,7 @@ function Video() {
                 <div className={classes.container}>
                 {/* Title and description section */}
                   <div className={classes.col1}>
-                    <Link href={video.url}>
+                    <Link href={`/${video.id}`}>
                       <h2>
                         {video.title}
                       </h2>

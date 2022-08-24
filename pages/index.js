@@ -13,7 +13,6 @@ function Home() {
       <VideoSection />
       <MoreInfo />
       <Directory />
-      <Footer />
     </div>
   )
 }
