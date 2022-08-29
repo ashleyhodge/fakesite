@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import classes from './Video.module.css'
-
 import { useState, useEffect } from 'react';
 import ReactPlayer from 'react-player'
 import videos from '/videos.json'
@@ -98,7 +97,6 @@ function Video() {
           })}
         </Carousel>
       </div>
- 
   )
 }
 
