@@ -26,7 +26,7 @@ export async function getServerSideProps(){
 
   client.request ({
     method: 'GET',
-    path: '/tutorial'
+    path: '/videos/533757272'
   }, function (error, body, status_code, headers) {
     if (error) {
       console.log(error);
@@ -34,9 +34,11 @@ export async function getServerSideProps(){
 
     console.log(body);
   })
+
+  const data = await client.request.json();
   return {
     props: {
-      results: 'Hello'
+      results: data
     }
   }
 }
